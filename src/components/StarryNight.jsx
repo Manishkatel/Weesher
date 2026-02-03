@@ -13,7 +13,7 @@ export default function StarryNight() {
     const numStars = 220
     let shootingStar = null
     let lastShootingStarTime = 0
-    const shootingStarInterval = 15000 // Show shooting star every 16 seconds
+    const shootingStarInterval = 16000 // Show shooting star every 16 seconds
 
     // Set canvas size and initialize
     const resizeCanvas = () => {
@@ -36,7 +36,7 @@ export default function StarryNight() {
     // Create a new shooting star
     const createShootingStar = () => {
       const startY = Math.random() * (canvas.height * 0.4) + canvas.height * 0.3 // Middle to lower portion
-      const speed = 5 + Math.random() * 2 // Speed between 5-7 (slower)
+      const speed = 2 + Math.random() * 2 // Speed between 4-6(slower)
       const length = 80 + Math.random() * 40 // Trail length
       
       shootingStar = {
@@ -44,7 +44,7 @@ export default function StarryNight() {
         y: startY,
         speed: speed,
         length: length,
-        opacity: 1,
+        opacity: 0.1,
         angle: -(Math.random() * 0.3 + 0.1) // Negative angle for upward path
       }
     }

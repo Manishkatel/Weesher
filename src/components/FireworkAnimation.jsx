@@ -19,7 +19,7 @@ export default function FireworkAnimation() {
         charSize: 30,
         charSpacing: 35,
         lineHeight: 40,
-        
+          
         cx: w / 2,
         cy: h / 2,
         
