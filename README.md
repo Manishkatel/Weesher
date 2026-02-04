@@ -61,4 +61,3 @@ birthday/
 ```
 
 Enjoy the celebration with Weesher! 🎉
-Sending Weesher is better than sending normal text or any emoji or GIFs.
