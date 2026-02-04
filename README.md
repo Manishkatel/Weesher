@@ -1,6 +1,9 @@
 # Weesher
 A simple, calming wishing website built with React. The page shows a quiet night sky, a small glowing candle, and gentle motion elements to create a peaceful atmosphere.
+
 The name is inspired by the word greeter, meaning the person who welcomes people at the door or gate as soon as they arrive at big hotels. Similarly, Weesher is a website to wish someone as soon as they open it. The greeter is always welcoming, kind and gentle which also inspired to make Weesher gentle and peaceful.
+
+It is designed to send wishes for occasions like Mother’s Day, Father’s Day, Valentine’s Day, birthdays, anniversaries, and more.
 
 ## Features
 
@@ -58,3 +61,4 @@ birthday/
 ```
 
 Enjoy the celebration with Weesher! 🎉
+Sending Weesher is better than sending normal text or any emoji or GIFs.
