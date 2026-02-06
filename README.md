@@ -35,13 +35,6 @@ To create a production build:
 npm run build
 ```
 
-The built files will be in the `dist` folder.
-
-## Technologies Used
-
-- **React/Vite** - UI framework
-- **Canvas API** - For starry night background animation
-
 ## Project Structure
 
 ```
@@ -60,4 +53,3 @@ birthday/
 └── vite.config.js
 ```
 
-Enjoy the celebration with Weesher! 🎉
