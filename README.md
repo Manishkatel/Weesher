@@ -1,39 +1,12 @@
-<<<<<<< HEAD
 # Weesher
-A simple, calming wishing website built with React. The page shows a quiet night sky, a small glowing candle, and gentle motion elements to create a peaceful atmosphere.
 
-The name is inspired by the word greeter, meaning the person who welcomes people at the door or gate as soon as they arrive at big hotels. Similarly, Weesher is a website to wish someone as soon as they open it. The greeter is always welcoming, kind and gentle which also inspired to make Weesher gentle and peaceful.
-
-It is designed to send wishes for occasions like Mother’s Day, Father’s Day, Valentine’s Day, birthdays, anniversaries, and more.
+Weesher is beautiful starry night wishing website with animated fireworks, a glowing candle, and background music, built with React. You can customize the text by yourself to wish birthday, mother's day, father's day, valentine's day and many more.
 
 ## Features
+- Consists of 220 twinkling stars on a dark background with periodic shooting star animations every 16 seconds
+- Music plays when the user click or touch with the page 
+- Firework Animations to show the wish 
 
-- Dark starry night background with slowly twinkling stars
-- A single shooting star that crosses the screen every 15 seconds in a smooth diagonal path
-- A glowing candle placed at the bottom center, animated using only CSS
-- Background birthday music that plays when the page loads
-- Works on all screen sizes
-- Background music plays automatically when possible, and waits for user interaction if the browser blocks autoplay.
-=======
-# Happy Birthday 🎂
-
-A beautiful starry night birthday wish website with a glowing candle, built with React.
-
-## Features
-
-- ✨ **Starry Night Background** - Dark night sky with twinkling stars (inspired by After Dark screensaver)
-- 🌠 **Shooting Star** - Animated shooting star that appears every 15 seconds, moving from left to right in an upward diagonal path
-- 🕯️ **Glowing Candle** - Animated CSS candle with flickering flame at the bottom center
-- 🎵 **Background Music** - Auto-playing birthday music (hbd.mp3)
-- 🌙 **Pure CSS Animations** - Smooth, lightweight animations without heavy 3D libraries
-- 📱 **Responsive Design** - Works on all screen sizes
-
-## How It Works
-
-- **StarryNight Component**: Uses HTML Canvas to render twinkling stars on a dark background with periodic shooting star animations
-- **Candle**: Pure CSS animation with flame effects, positioned at the bottom center
-- **Background Music**: Auto-plays when the page loads (with fallback for user interaction if autoplay is blocked)
->>>>>>> c5bba87 (name set)
 
 ## Installation
 
@@ -56,21 +29,30 @@ To create a production build:
 npm run build
 ```
 
+## INSTRUCTIONS TO CUSTOMIZE YOUR WISH:
+- Go to  "src\components\FireworkAnimation.jsx"   and press Ctrl + F to search any of words "happy", "birthday", "to".
+
 ## Project Structure
 
 ```
 birthday/
 ├── public/
-│   └── hbd.mp3          # Background music
+│   └── hbd.mp3          
 ├── src/
 │   ├── components/
-│   │   └── StarryNight.jsx  # Starry night background component
-│   ├── App.jsx          # Main app component
-│   ├── App.css          # App styles (candle animations)
-│   ├── index.css        # Global styles
-│   └── main.jsx         # Entry point
+│   │   ├── StarryNight.jsx     
+│   │   └── FireworkAnimation.jsx 
+│   ├── App.jsx          
+│   ├── App.css          
+│   ├── index.css       
+│   └── main.jsx         t
 ├── index.html
 ├── package.json
 └── vite.config.js
 ```
 
+## TECH STACK 
+
+- React 18.2.0
+- Vite 7.3.1
+- HTML5 Canvas API
