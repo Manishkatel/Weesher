@@ -12,13 +12,15 @@ function App() {
     const playAudio = () => {
       if (audioRef.current && !hasPlayed) {
         hasPlayed = true
+
+        // Solved audio loading issue
         
         // Ensure audio is loaded
         if (audioRef.current.readyState >= 2) {
           audioRef.current.volume = 1.0
           const playPromise = audioRef.current.play()
           
-          if (playPromise !== undefined) {
+          if (playPromise !== undefined) {                      
             playPromise
               .then(() => {
                 // Audio started playing

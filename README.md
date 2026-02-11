@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Weesher
 A simple, calming wishing website built with React. The page shows a quiet night sky, a small glowing candle, and gentle motion elements to create a peaceful atmosphere.
 
@@ -13,6 +14,26 @@ It is designed to send wishes for occasions like Mother’s Day, Father’s Day,
 - Background birthday music that plays when the page loads
 - Works on all screen sizes
 - Background music plays automatically when possible, and waits for user interaction if the browser blocks autoplay.
+=======
+# Happy Birthday 🎂
+
+A beautiful starry night birthday wish website with a glowing candle, built with React.
+
+## Features
+
+- ✨ **Starry Night Background** - Dark night sky with twinkling stars (inspired by After Dark screensaver)
+- 🌠 **Shooting Star** - Animated shooting star that appears every 15 seconds, moving from left to right in an upward diagonal path
+- 🕯️ **Glowing Candle** - Animated CSS candle with flickering flame at the bottom center
+- 🎵 **Background Music** - Auto-playing birthday music (hbd.mp3)
+- 🌙 **Pure CSS Animations** - Smooth, lightweight animations without heavy 3D libraries
+- 📱 **Responsive Design** - Works on all screen sizes
+
+## How It Works
+
+- **StarryNight Component**: Uses HTML Canvas to render twinkling stars on a dark background with periodic shooting star animations
+- **Candle**: Pure CSS animation with flame effects, positioned at the bottom center
+- **Background Music**: Auto-plays when the page loads (with fallback for user interaction if autoplay is blocked)
+>>>>>>> c5bba87 (name set)
 
 ## Installation
 

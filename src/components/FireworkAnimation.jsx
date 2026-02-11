@@ -15,7 +15,7 @@ export default function FireworkAnimation() {
       hh = h / 2,
       
       opts = {
-        strings: [ 'HAPPY', 'BIRTHDAY', 'TO YOU', 'NAMITA' ],
+        strings: [ 'HAPPY', 'BIRTHDAY', 'TO YOU', 'DEAR' ],
         charSize: 30,
         charSpacing: 35,
         lineHeight: 40,
