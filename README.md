@@ -30,7 +30,7 @@ npm run build
 ```
 
 ## INSTRUCTIONS TO CUSTOMIZE YOUR WISH:
-- Go to  "src\components\FireworkAnimation.jsx"   and press Ctrl + F to search any of words "happy", "birthday", "to".
+- Go to  "src\components\FireworkAnimation.jsx"   and press Ctrl + F to search any of words "happy", "birthday", "to" to edit the wish.
 
 ## Project Structure
 
