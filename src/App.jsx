@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { Analytics } from "@vercel/analytics/next"
 import StarryNight from './components/StarryNight'
 import FireworkAnimation from './components/FireworkAnimation'
 import './App.css'
@@ -80,11 +81,14 @@ function App() {
 
   return (
     <div className="app">
+     
       {/* Starry Night Background */}
       <StarryNight />
 
       {/* Firework Animation */}
       <FireworkAnimation />
+
+     <Analytics />
 
       {/* Background Music */}
       <audio 
@@ -103,6 +107,7 @@ function App() {
           <div className="thread"></div>
           <div className="glow"></div>
           <div className="flame"></div>
+           
         </div>
       </div>
     </div>
