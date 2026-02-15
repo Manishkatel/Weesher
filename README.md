@@ -7,7 +7,9 @@ Weesher is beautiful starry night wishing website with animated fireworks, a glo
 - Music plays when the user click or touch with the page 
 - Firework Animations to show the wish 
 
-
+## INSTRUCTIONS TO CUSTOMIZE YOUR WISH:
+- Go to  "src\components\FireworkAnimation.jsx"   and press Ctrl + F to search any of words "happy", "birthday", "to" to edit the wish.
+  
 ## Installation
 
 1. Install dependencies:
@@ -29,8 +31,6 @@ To create a production build:
 npm run build
 ```
 
-## INSTRUCTIONS TO CUSTOMIZE YOUR WISH:
-- Go to  "src\components\FireworkAnimation.jsx"   and press Ctrl + F to search any of words "happy", "birthday", "to" to edit the wish.
 
 ## Project Structure
 
