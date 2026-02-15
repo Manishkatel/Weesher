@@ -45,7 +45,7 @@ birthday/
 │   ├── App.jsx          
 │   ├── App.css          
 │   ├── index.css       
-│   └── main.jsx         t
+│   └── main.jsx         
 ├── index.html
 ├── package.json
 └── vite.config.js
