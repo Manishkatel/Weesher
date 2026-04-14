@@ -1,6 +1,6 @@
 # Weesher
 
-Weesher is beautiful starry night wishing website with animated fireworks, a glowing candle, and background music, built with React. You can customize the text by yourself to wish birthday, mother's day, father's day, valentine's day and many more.
+Weesher is beautiful starry night wishing website with animated fireworks, a glowing candle, and background music, built with React. You can customize the text by yourself to wish birthday, new year, mother's day, father's day, valentine's day and many more.
 
 ## Features
 - Consists of 220 twinkling stars on a dark background with periodic shooting star animations every 16 seconds
