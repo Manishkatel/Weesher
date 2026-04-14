@@ -56,7 +56,7 @@ function App() {
       playAudio()
     }
 
-    // Add listeners to the entire app container
+    // Listeners to the entire app container
     const appElement = document.querySelector('.app')
     
     if (appElement) {
