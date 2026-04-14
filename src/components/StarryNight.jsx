@@ -13,14 +13,14 @@ export default function StarryNight() {
     const numStars = 220
     let shootingStar = null
     let lastShootingStarTime = 0
-    const shootingStarInterval = 16000 // Show shooting star every 16 seconds
+    const shootingStarInterval = 16000 // Shooting star every 16 seconds
 
-    // Set canvas size and initialize
+    // Canvas size and initialization of stars
     const resizeCanvas = () => {
       canvas.width = window.innerWidth
       canvas.height = window.innerHeight
       
-      // Generate stars with twinkling properties
+      // stars with twinkling properties
       stars = []
       for (let i = 0; i < numStars; i++) {
         stars.push({
@@ -33,7 +33,7 @@ export default function StarryNight() {
       }
     }
 
-    // Create a new shooting star
+    // shooting star
     const createShootingStar = () => {
       const startY = Math.random() * (canvas.height * 0.4) + canvas.height * 0.3 // Middle to lower portion
       const speed = 2 + Math.random() * 2 // Speed between 4-6(slower)
@@ -61,7 +61,7 @@ export default function StarryNight() {
       ctx.fillStyle = '#000000'
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      // Draw and update stars (twinkling)
+      // twinkle stars
       stars.forEach(star => {
         // Twinkle effect
         star.opacity += star.twinkleSpeed
@@ -69,7 +69,7 @@ export default function StarryNight() {
           star.twinkleSpeed = -star.twinkleSpeed
         }
 
-        // Draw star
+        // star
         ctx.beginPath()
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2)
         ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`
@@ -84,13 +84,12 @@ export default function StarryNight() {
         }
       }
 
-      // Draw and update shooting star
       if (shootingStar) {
-        // Update position (straight upward diagonal path)
+        // shooting star movement
         shootingStar.x += shootingStar.speed
         shootingStar.y += shootingStar.speed * Math.sin(shootingStar.angle)
 
-        // Draw shooting star with trail
+        // shooting star with trail
         const gradient = ctx.createLinearGradient(
           shootingStar.x - shootingStar.length * Math.cos(shootingStar.angle),
           shootingStar.y - shootingStar.length * Math.sin(shootingStar.angle),
@@ -111,13 +110,13 @@ export default function StarryNight() {
         ctx.lineTo(shootingStar.x, shootingStar.y)
         ctx.stroke()
 
-        // Draw bright head
+        // bright head of shooting star
         ctx.beginPath()
         ctx.arc(shootingStar.x, shootingStar.y, 3, 0, Math.PI * 2)
         ctx.fillStyle = 'rgba(255, 255, 255, 1)'
         ctx.fill()
 
-        // Remove shooting star when it goes off-screen
+        // Removing shooting star when it goes off-screen
         if (shootingStar.x > canvas.width + 50 || shootingStar.y < -50) {
           shootingStar = null
         }
